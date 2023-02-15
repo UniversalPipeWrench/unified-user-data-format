@@ -17,11 +17,11 @@ The [semantic version](https://semver.org/) of the specification.
 Conditions for bumping major/minor/patch version: TBD
 Potential suffixes: `-draft`, TBD
 
-#### `"subscrpitions"`
+#### `"subscriptions"`
 
 An array of Subscription objects. See below for details.
 
-#### `"subscrpitions"`
+#### `"playlists"`
 
 An array of Playlist objects. See below for details.
 
@@ -30,7 +30,7 @@ An array of Playlist objects. See below for details.
 ```javascript
 {
 	"version": "X.Y.Z[-draft/-rc]",
-	"subscriptions": Subscrpitions[],
+	"subscriptions": Subscriptions[],
 	"playlists": Playlist[],
 }
 ```
@@ -83,7 +83,7 @@ CAN be ommited; In this case, the parser MUST assume an empty `String`.
 An array of `String`.
 
 Each item of the array is an URL representing one video in the playlist.
-Items has to be sorted in the same order as the videos in the playlist.
+The array must be sorted in the same order as the videos in the playlist.
 
 ### Example
 
