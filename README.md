@@ -45,6 +45,7 @@ Indicates whether the special playlist `watch_history` was included in the expor
 }
 ```
 
+
 ## Playlist file (`playlist_xxx.json`)
 
 A playlist file MUST contain the data of a single playlist created by the user.
@@ -68,10 +69,7 @@ CAN be nil; In this case, the parser MUST assume an empty `String`.
 
 #### > `"videos"`
 
-An array of `String`.
-
-Each item of the array is an URL representing one video in the playlist.
-The array must be sorted in the same order as the videos in the playlist.
+An array of [video objects](spec/video_object).
 
 ### Overview
 
@@ -80,7 +78,7 @@ The array must be sorted in the same order as the videos in the playlist.
 	"name": String,
 	"visibility": String,
 	"description": String,
-	"videos": String[],
+	"videos": VideoObject[],
 }
 ```
 
@@ -91,15 +89,12 @@ The watch history is nothing more than a private paylist, without metadata
 
 #### > `"videos"`
 
-An array of `String`.
-
-Each item of the array is an URL representing one video in the playlist.
-The array must be sorted in the same order as the videos in the playlist.
+An array of [video objects](spec/video_object).
 
 ### Overview
 
 ```javascript
 {
-	"videos": String[],
+	"videos": VideoObject[],
 }
 ```
