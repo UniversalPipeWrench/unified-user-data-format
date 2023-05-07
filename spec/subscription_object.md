@@ -28,7 +28,13 @@ This URL SHOULD NOT contain query parameters.
 
 #### > `"thumbnail"`
 
-The URL to the user/channel's thumbnail.
+The URL to the user/channel's avatar.
+
+This field CAN be omitted, e.g if the channel doesn't have an avatar, or
+if the exporter doesn't store this metadata.
+
+If present, it MUST represent the original URL to the avatar as found on
+the service mentioned in `type`.
 
 ### Overview
 
@@ -38,6 +44,6 @@ The URL to the user/channel's thumbnail.
   "id": String,
   "name": String,
   "url": String,
-  "thumbnail": String
+  "thumbnail": String | null
 }
 ```

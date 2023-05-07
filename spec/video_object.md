@@ -26,6 +26,12 @@ This URL SHOULD NOT contain query parameters.
 
 The URL to the video's thumbnail.
 
+This field CAN be omitted, e.g if the video doesn't have a thumbnail, or
+if the exporter doesn't store this metadata.
+
+If present, it MUST represent the original URL to the thumbnail as found on
+the service mentioned in `type`.
+
 ### Overview
 
 ```javascript
@@ -33,6 +39,6 @@ The URL to the video's thumbnail.
   "type": String,
   "id": String,
   "url": String,
-  "thumbnail": String
+  "thumbnail": String | null
 }
 ```
