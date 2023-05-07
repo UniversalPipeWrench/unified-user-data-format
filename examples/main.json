@@ -1,5 +1,5 @@
 {
-	"version": "0.0.3-draft",
+	"version": "0.0.4-draft",
 	"subscriptions": [
 		{
 			"type": "youtube",
@@ -9,6 +9,7 @@
 			"thumbnail": "https://yt3.ggpht.com/ytc/[snip]"
 		}
 	],
+	"saved_playlists_present": true,
 	"watch_history_present": true,
 	"playlists": [
 		"abc123"

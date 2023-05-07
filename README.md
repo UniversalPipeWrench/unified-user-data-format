@@ -28,6 +28,12 @@ An array of Strings.
 Each string refers to the name of a playlist file (without the `playlist_` prefix)
 that was included in the export.
 
+#### `"saved_playlists_present"`
+
+A Boolean.
+
+Indicates whether the `saved_playlists.json` file was included in the export.
+
 #### `"watch_history_present"`
 
 A Boolean.
@@ -39,6 +45,7 @@ Indicates whether the special playlist `watch_history` was included in the expor
 ```javascript
 {
 	"version": "X.Y.Z[-draft/-rc]",
+	"saved_playlists_present": Boolean,
 	"watch_history_present": Boolean,
 	"subscriptions": SubscriptionObject[],
 	"playlists": String[],
@@ -79,6 +86,23 @@ An array of [video objects](spec/video_object).
 	"visibility": String,
 	"description": String,
 	"videos": VideoObject[],
+}
+```
+
+
+## Saved playlist file (`saved_playlists.json`)
+
+This file contains the playlists from other services that the user bookmarked.
+
+#### > `"playlists"`
+
+An array of [saved playlist objects](spec/saved playlist_object).
+
+### Overview
+
+```javascript
+{
+	"playlists": SavedPlaylist[],
 }
 ```
 
