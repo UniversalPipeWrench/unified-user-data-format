@@ -1,0 +1,14 @@
+{
+	"name": "My fav Music!",
+	"visibility": "public",
+	"description": "The playlist I listen to every day",
+	"videos": [
+		"https://www.youtube.com/v/djV11Xbc914",
+		"https://www.youtube.com/v/HEXWRTEbj1I",
+		"https://www.youtube.com/v/sRl02nXVMhw",
+		"https://www.youtube.com/v/dQw4w9WgXcQ",
+		"https://www.youtube.com/v/Hy8kmNEo1i8",
+		"https://www.youtube.com/v/zA52uNzx7Y4",
+		"https://www.youtube.com/v/9bZkp7q19f0"
+	]
+}

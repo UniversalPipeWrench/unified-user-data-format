@@ -8,7 +8,7 @@ Specification for the unified user data format across the various "Tube" apps (N
 * Unless otherwise specified, all fields are assumed to be `Strings`
 
 
-## Top level structure
+## Main file (`main.json`)
 
 #### `"version"`
 
@@ -23,15 +23,25 @@ An array of Subscription objects. See below for details.
 
 #### `"playlists"`
 
-An array of Playlist objects. See below for details.
+An array of Strings.
+
+Each string refers to the name of a playlist file (without the `playlist_` prefix)
+that was included in the export.
+
+#### `"watch_history_present"`
+
+A Boolean.
+
+Indicates whether the special playlist `watch_history` was included in the export.
 
 ### Overview
 
 ```javascript
 {
 	"version": "X.Y.Z[-draft/-rc]",
+	"watch_history_present": Boolean,
 	"subscriptions": Subscriptions[],
-	"playlists": Playlist[],
+	"playlists": String[],
 }
 ```
 
@@ -59,7 +69,10 @@ The URL to the user/channel's thumbnail.
 }
 ```
 
-## Playlist object
+
+## Playlist file (`playlist_xxx.json`)
+
+A playlist file MUST contain the data of a single playlist created by the user.
 
 #### > `"name"`
 
@@ -76,7 +89,7 @@ Accepted values: "public", "unlisted", "private"
 The description of the playlist.
 Format: plain text (? TBD)
 
-CAN be ommited; In this case, the parser MUST assume an empty `String`.
+CAN be nil; In this case, the parser MUST assume an empty `String`.
 
 #### > `"videos"`
 
@@ -85,21 +98,33 @@ An array of `String`.
 Each item of the array is an URL representing one video in the playlist.
 The array must be sorted in the same order as the videos in the playlist.
 
-### Example
+### Overview
 
 ```javascript
 {
-  "name": "My fav Music!",
-  "visibility": "public",
-  "description": "The playlist I listen to every day",
-  "videos": [
-    "https://www.youtube.com/v/djV11Xbc914",
-    "https://www.youtube.com/v/HEXWRTEbj1I",
-    "https://www.youtube.com/v/sRl02nXVMhw",
-    "https://www.youtube.com/v/dQw4w9WgXcQ",
-    "https://www.youtube.com/v/Hy8kmNEo1i8",
-    "https://www.youtube.com/v/zA52uNzx7Y4",
-    "https://www.youtube.com/v/9bZkp7q19f0"
-  ]
-},
+	"name": String,
+	"visibility": String,
+	"description": String,
+	"videos": String[],
+}
+```
+
+
+## Watch history file (`watch_history.json`)
+
+The watch history is nothing more than a private paylist, without metadata
+
+#### > `"videos"`
+
+An array of `String`.
+
+Each item of the array is an URL representing one video in the playlist.
+The array must be sorted in the same order as the videos in the playlist.
+
+### Overview
+
+```javascript
+{
+	"videos": String[],
+}
 ```
