@@ -1,0 +1,46 @@
+{
+	"videos": [
+		{
+			"type": "youtube",
+			"id": "djV11Xbc914",
+			"url": "https://www.youtube.com/v/djV11Xbc914",
+			"thumbnail": "https://i.ytimg.com/vi/djV11Xbc914/default.jpg"
+		},
+		{
+			"type": "youtube",
+			"id": "HEXWRTEbj1I",
+			"url": "https://www.youtube.com/v/HEXWRTEbj1I",
+			"thumbnail": "https://i.ytimg.com/vi/HEXWRTEbj1I/default.jpg"
+		},
+		{
+			"type": "youtube",
+			"id": "sRl02nXVMhw",
+			"url": "https://www.youtube.com/v/sRl02nXVMhw",
+			"thumbnail": "https://i.ytimg.com/vi/sRl02nXVMhw/default.jpg"
+		},
+		{
+			"type": "youtube",
+			"id": "dQw4w9WgXcQ",
+			"url": "https://www.youtube.com/v/dQw4w9WgXcQ",
+			"thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/default.jpg"
+		},
+		{
+			"type": "youtube",
+			"id": "Hy8kmNEo1i8",
+			"url": "https://www.youtube.com/v/Hy8kmNEo1i8",
+			"thumbnail": "https://i.ytimg.com/vi/Hy8kmNEo1i8/default.jpg"
+		},
+		{
+			"type": "youtube",
+			"id": "zA52uNzx7Y4",
+			"url": "https://www.youtube.com/v/zA52uNzx7Y4",
+			"thumbnail": "https://i.ytimg.com/vi/zA52uNzx7Y4/default.jpg"
+		},
+		{
+			"type": "youtube",
+			"id": "9bZkp7q19f0",
+			"url": "https://www.youtube.com/v/9bZkp7q19f0",
+			"thumbnail": "https://i.ytimg.com/vi/9bZkp7q19f0/default.jpg"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"version": "0.0.5-draft",
+	"subscriptions": [
+		{
+			"type": "youtube",
+			"id": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+			"name": "Linus Tech Tips",
+			"url": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
+			"thumbnail": "https://yt3.ggpht.com/ytc/[snip]"
+		}
+	],
+	"saved_playlists_present": true,
+	"watch_history_present": true,
+	"playlists": [
+		"abc123"
+	]
+}
