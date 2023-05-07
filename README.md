@@ -19,7 +19,7 @@ Potential suffixes: `-draft`, TBD
 
 #### `"subscriptions"`
 
-An array of Subscription objects. See below for details.
+An array of [subscription objects](spec/subscription_object).
 
 #### `"playlists"`
 
@@ -40,35 +40,10 @@ Indicates whether the special playlist `watch_history` was included in the expor
 {
 	"version": "X.Y.Z[-draft/-rc]",
 	"watch_history_present": Boolean,
-	"subscriptions": Subscriptions[],
+	"subscriptions": SubscriptionObject[],
 	"playlists": String[],
 }
 ```
-
-## Subscription object
-
-#### > `"name"`
-
-The name of the subscribed channel.
-
-#### > `"url"`
-
-The URL used to access the user subscribed channel.
-
-#### > `"thumbnail"`
-
-The URL to the user/channel's thumbnail.
-
-### Example
-
-```javascript
-{
-  "name": "Linus Tech Tips",
-  "url": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
-  "thumbnail": "https://yt3.ggpht.com/ytc/abcdef..."
-}
-```
-
 
 ## Playlist file (`playlist_xxx.json`)
 

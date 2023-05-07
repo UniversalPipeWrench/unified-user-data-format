@@ -2,6 +2,8 @@
 	"version": "0.0.2-draft",
 	"subscriptions": [
 		{
+			"type": "youtube",
+			"id": "UCXuqSBlHAE6Xw-yeJA0Tunw",
 			"name": "Linus Tech Tips",
 			"url": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
 			"thumbnail": "https://yt3.ggpht.com/ytc/[snip]"
